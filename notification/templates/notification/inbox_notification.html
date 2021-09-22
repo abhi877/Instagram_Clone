@@ -1,0 +1,16 @@
+{% if count == 0 %}
+
+    <span class='inbox-notif-numbers'></span>
+
+{% else %}   
+    
+    <span class='inbox-notif-numbers'>               
+        <i class='fa fa-circle col-12' id='inbox-dot'></i>
+        {% if count > 9 %}
+        <span class='inbox-number col-12'>9+</span>
+        {% else %}
+        <span class='inbox-number col-12'>{{count}}</span>
+        {% endif %}
+    </span>    
+
+{% endif %}
